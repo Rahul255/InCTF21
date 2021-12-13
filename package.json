@@ -24,9 +24,10 @@
     "chartjs-plugin-datalabels": "^2.0.0",
     "d3-scale": "^4.0.2",
     "framer-motion": "^4.1.17",
+    "install": "^0.13.0",
     "isomorphic-fetch": "3.0.0",
     "js-yaml-loader": "1.2.2",
-    "lodash": "4.17.20",
+    "lodash": "^4.17.21",
     "next": "^11.0.1",
     "next-compose-plugins": "^2.2.0",
     "next-offline": "^5.0.2",
@@ -60,6 +61,7 @@
     "@types/react": "^17.0.27",
     "autoprefixer": "^10.3.6",
     "postcss": "^8.3.8",
+    "static-site-generator-webpack-plugin": "^3.4.2",
     "tailwindcss": "^2.2.16",
     "typescript": "^4.4.3"
   }

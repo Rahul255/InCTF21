@@ -29,9 +29,25 @@
       }
     ]
   },
+  {
 
-
-
+    "label": "Conference",
+    "link": "/conference",
+    
+    "items": [
+      
+      {
+        "label": "speakers",
+        "link": "/rules"
+      },
+      {
+        "label": "schedule",
+        "badge": "3 Lks+",
+        "badgeColor": "bg-green-100",
+        "link": "championship/#prizes"
+      }
+    ]
+  },
   {
     "label": "Championship",
     "link": "/championship",
