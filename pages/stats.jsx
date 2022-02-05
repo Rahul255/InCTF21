@@ -3,10 +3,8 @@ import styled from "@emotion/styled";
 
 import Base from "../src/components/shared/Base";
 import TopBar from "../src/components/shared/TopBar";
-
-import leaderboard19 from '../src/data/hall-of-fame/2019';
-import leaderboard20 from '../src/data/hall-of-fame/2020';
-import schoolRank20 from '../src/data/school-rankings/20'
+import qualifiers21 from '../src/data/hall-of-fame/2021-quals';
+import qualifiersPro21 from '../src/data/hall-of-fame/2021-quals-pro';
 
 import YearlyLeaderboard from "../src/components/HallOfFame/YearlyLeaderboard";
 import Footer from "../src/components/shared/Footer";
@@ -33,9 +31,101 @@ const TabButton = styled.button`
 
 const Stats = () => {
 
-    const [year, setYear] = useState(2019);
+    const [year, setYear] = useState(2021);
 
     const editions = [
+        {
+           
+            year: 2021,
+            stats: {
+                totalRegistrations: 1587,
+                totalStates: 16,
+                totalFinalists: 190,
+            },
+            champions: [
+                {
+                    "name": "Team tce",
+                    "school": "Chandigarh Group of Colleges",
+                    "title": "First Prize Winners",
+                    "members": "Harshit Joshi, Vishek Chaudhary",
+                    "avatar": require('../src/assets/images/champions/cgc.png')
+                },
+                {
+                    "name": "Team 1nf1n1ty",
+                    "school": "SASTRA University, Thanjavur",
+                    "title": "Second Prize Winners",
+                    "members": "Shyam Sunder Saravanan, Brijesharun Gurumurthy, RAGHUL P S, Vigneshwaran, Hariharan Sundar",
+                    "avatar": require('../src/assets/images/champions/Sastra.png')
+                },
+                {
+                    "name": "Team cabal_of_crackers909",
+                    "school": "Chennai Institute of Technology",
+                    "title": "Third Prize Winners",
+                    "members": "Sai Sabarish, Roshan Jagadish, Vinay Saran, Abishua Bezalel Raj J, Pavan Kalyan",
+                    "avatar": require('../src/assets/images/champions/ciot.png')
+                },
+            ],
+            experienced: [
+
+                {
+                    "name": "Team iitbreachers",
+                    "school": "Indian Institute of Technology, Bombay (IIT-B)",
+                    "title": "First Prize Winners",
+                    "members": "Sahil Jain, Pulkit Agrawal, Girish Srivatsa, Neel Aryan",
+                    "avatar": require('../src/assets/images/champions/iitbombay.png')
+                },
+                {
+                    "name": "Team team_sist",
+                    "school": "Sathyabama Institute of Science and Technology",
+                    "title": "Second Prize Winners",
+                    "members": "Abisheik Magesh, Abhishek Bajpai, jones, Chella dhanush, Hasan Firnas",
+                    "avatar": require('../src/assets/images/champions/sathyabama.png')
+                },
+                {
+                    "name": "Team sappi_sippi354",
+                    "school": "Government College of Engineering, Srirangam",
+                    "title": "Third Prize Winners",
+                    "members": "Saravanakumar K, Suriya muthusamy",
+                    "avatar": require('../src/assets/images/champions/gcesrirangam.jpeg')
+                }
+            ],
+            womenHackers: [
+
+                {
+                    "name": "Team powerpuff_girls",
+                    "school": "Lovely Professional University (LPU), Punjab",
+                    "title": "First Prize Winners",
+                    "members": "Manasi Jha, Megha Jha",
+                    "avatar": require('../src/assets/images/champions/lovelypu.png')
+                },
+                {
+                    "name": "Team f.o.g.m.j",
+                    "school": "Manipal Institute of Technology",
+                    "title": "Second prize Winners",
+                    "members": "Jyothsna Ashok",
+                    "avatar": require('../src/assets/images/champions/Manipal_University_logo.png')
+                }
+            ],
+            professionals: [
+
+                {
+                    "name": "Team SSOD",
+                    "school": "Company name not specified",
+                    "title": "First prize Winners",
+                    "members": "Ajay Suresh kumar, G S Nagendran, yuvaraj you_we(UV), Monish Kumar, Johan",
+                    "avatar": require('../src/assets/images/champions/professionals.png')
+                },
+                {
+                    "name": "Team ValueMentor",
+                    "school": "Company name not specified",
+                    "title": "Second prize Winners",
+                    "members": "Hemant Boban, Kishor B, Hariharan S, Rishikesh KS",
+                    "avatar": require('../src/assets/images/champions/professionals.png')
+                }
+            ],
+            leaderboard: qualifiers21,
+            
+        },
         {
             year: 2019,
             stats: {
@@ -67,7 +157,7 @@ const Stats = () => {
                 }
             ],
             womenHackers: [
-                
+
                 {
                     "name": "Sreesruthi PK",
                     "school": "Amrita Vishwa Vidyapeetham",
@@ -76,8 +166,6 @@ const Stats = () => {
                     "avatar": require('../src/assets/images/champions/sreesruthi.png')
                 }
             ],
-            leaderboard: leaderboard20,
-            schools: schoolRank20
         },
         {
             year: 2018,
@@ -104,17 +192,13 @@ const Stats = () => {
                     "avatar": require('../src/assets/images/champions/inito.png')
                 },
             ],
-            leaderboard: leaderboard19
         },
-        // { "year": 2018, leaderboard: [] },
-        // { "year": 2017, leaderboard: [] },
-        // { "year": 2016, leaderboard: [] }
     ]
 
     return <Base meta={{ title: "Statistics & Rankings" }}>
         <TopBar darkenOnSidebar includeSpace={false} />
         <PageHeader
-            title="Past Statistics & Rankings"
+            title="Statistics & Rankings"
             breadcrumb={[
                 {
                     link: '/championship',

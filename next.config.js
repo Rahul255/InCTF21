@@ -56,6 +56,16 @@ const customConfig = {
                 source: '/hall-of-fame',
                 destination: '/stats',
                 permanent: true,
+            },
+            {
+                source: '/rankings',
+                destination: '/stats',
+                permanent: false,
+            },
+            {
+                source: '/rankings',
+                destination: '/stats',
+                permanent: false,
             }
         ]
     },
@@ -81,6 +91,9 @@ const customConfig = {
             "/trainings": { page: "/trainings" },
             "/advisory-board": { page: "/advisory-board" },
             "/discord": { page: "/discord" },
+            "/join": { page: "/join" },
+            "/join1": { page: "/join1" },
+            "/join2": { page: "/join2" },
             "/privacy": { page: "/privacy" },
             "/sponsors": { page: "/sponsors" },
             "/organizers": { page: "/organizers" },

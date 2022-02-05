@@ -39,7 +39,9 @@ const LandingQuickInfo = () => {
         {
             image: require('../../assets/images/icons/calendar.png'), up: true,
             question: "When?", answer: <>
-                Finals Jan 7-9, 2022, <br />International Conference Jan 21-23, 2022 
+                Finals Jan 7-9, 2022, <br />
+                
+                International Conference Jan 21-23, 2022 
             </>
         },
         {

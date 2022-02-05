@@ -68,9 +68,24 @@ const inCTFSponsors = [
         desg: "Gold Sponsor",
     },
     {
+        image: require('../../assets/images/sponsors/GL-blue.png'),
+        maxHeight: '50px',
+        desg: "Gold Sponsor",
+    },
+    {
+        image: require('../../assets/images/sponsors/Logo_SE.png'),
+        maxHeight: '40px',
+        desg: "Gold Sponsor",
+    },
+    {
         image: require('../../assets/images/sponsors/h&rblock.png'),
-        maxHeight: '100px',
+        maxHeight: '150px',
         desg: "Silver Sponsor",
+    },
+    {
+        image: require('../../assets/images/sponsors/Audius_Logo.png'),
+        maxHeight: '30px',
+        desg: "Prize Sponsor",
     },
     
 ];
@@ -90,7 +105,7 @@ const SponsorsSection = () => {
                     
                 </div>
                 {inCTFSponsors.map((s, i) =>
-                    <div className="md:w-1/2 px-2 w-1/2 p-1 flex justify-center text-center items-end"  key={i}>
+                    <div className="md:w-1/4 px-2 w-1/2 py-3 flex justify-center text-center items-end"  key={i}>
                         <div className="text-center">
                             <Fade>
                                 <img
